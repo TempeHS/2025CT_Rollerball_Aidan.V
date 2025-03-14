@@ -2428,7 +2428,7 @@ Rigidbody:
   m_GameObject: {fileID: 1404565255}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -2575,7 +2575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38692a1a669ca747961a029a86f220c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 50
   countText: {fileID: 304568851}
   winTextObject: {fileID: 1199273108}
 --- !u!1001 &1436365152
