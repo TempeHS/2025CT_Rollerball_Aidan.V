@@ -58,6 +58,21 @@ public class PlayerController : MonoBehaviour
 
  // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed); 
+
+                float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis ("Vertical");
+
+        Vector3 movement2 = new Vector3(moveHorizontal, 0.0f, moveVertical);
+
+        GetComponent<Rigidbody>().AddForce (movement2 * speed * Time.deltaTime);
+
+        {
+            if (Input.GetKeyDown ("space") && GetComponent<Rigidbody>().transform.position.y <= 0.6250001f) {
+                Vector3 jump = new Vector3 (0.0f, 200.0f, 0.0f);
+
+                GetComponent<Rigidbody>().AddForce (jump);
+            }
+        }
     }
 
  
